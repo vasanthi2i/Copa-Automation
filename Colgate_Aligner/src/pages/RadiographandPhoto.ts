@@ -29,7 +29,7 @@ export class RadiographandPhoto implements Radiographandphotoint {
             await this.page.locator("(//button[contains(text(),'upload file')])[1]").click(),
         ])
         await fileChooser.setFiles([
-            'C:/Users/Windows/Desktop/Copa/Colgate_Alingner/images/Xray1.jpg'
+            'images/Xray1.jpg'
         ]);
 
         await this.page.waitForTimeout(30000);

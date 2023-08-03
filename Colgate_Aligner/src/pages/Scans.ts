@@ -22,13 +22,14 @@ export class Scans implements Scansint {
     async uploadUpperScan(): Promise<void> {
         //await this.uploadupperscan.setInputFiles('images/arch_u.stl');
         await this.page.waitForTimeout(20000);
-        await this.page.setInputFiles("//input[contains(@data-testid, 'upperInput')]", 'C:/Users/Windows/Desktop/Copa/Colgate_Alingner/images/arch_u.stl');
-        //await this.page.setInputFiles("//input[contains(@data-testid, 'upperInput')]", 'images/arch_u.stl');
+        //await this.page.setInputFiles("//input[contains(@data-testid, 'upperInput')]", 'C:/Users/Windows/Desktop/Copa/Colgate_Alingner/images/arch_u.stl');
+        await this.page.setInputFiles("//input[contains(@data-testid, 'upperInput')]", 'images/arch_u.stl');
         await this.page.waitForTimeout(8000);
 
     }
     async uploadLowerScan(): Promise<void> {
-        await this.page.setInputFiles("//input[contains(@data-testid, 'lowerInput')]", 'C:/Users/Windows/Desktop/Copa/Colgate_Alingner/images/arch_l.stl');
+        await this.page.setInputFiles("//input[contains(@data-testid, 'lowerInput')]", 'images/arch_l.stl');
+        //await this.page.setInputFiles("//input[contains(@data-testid, 'lowerInput')]", 'C:/Users/Windows/Desktop/Copa/Colgate_Alingner/images/arch_l.stl');
         await this.page.waitForTimeout(39000);
 
     }

@@ -1,4 +1,4 @@
-import { Page } from "playwright";
+import { Page } from "@playwright/test";
 import { test,expect } from "@playwright/test";
 import logger from "../utils/logger";
 export class TestUtils {
