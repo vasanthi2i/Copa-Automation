@@ -1,8 +1,6 @@
 import { Page } from "playwright";
 import { test,expect } from "@playwright/test";
 import logger from "../utils/logger";
-import winston from 'winston';
-
 export class TestUtils {
 
   static async launchUrl(url:string, page:Page): Promise<void>
