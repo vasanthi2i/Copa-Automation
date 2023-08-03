@@ -21,7 +21,7 @@ test("Verify New Patient Treatment Plan Creation and Order Confirmation ", async
   const [login_page, Patients_page, Patientsinformation_page, Clinicalinfo_page, Scan_page, RadioandPhoto_page, TreatandPreparePlan_page, Order_page] = pages;
 
   //copa url
-  //Login Page
+  //Login Page is created
   await login_page.enterEmailPassWordandLogin("ttvcopa1@mailinator.com", "Copa12#");
   TestUtils.log("Login Page", "Logged-in Successfully");
 
